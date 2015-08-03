@@ -6,6 +6,8 @@
 
 .box {
     background-color: #008;
+    margin: 0;
+    padding: 3rem;
 }
 
 h1 {
