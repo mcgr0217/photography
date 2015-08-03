@@ -116,10 +116,11 @@ h1 {
 
 .banner {
     text-align: center;
+    margin: 0;
 }
 
 .photobanner {
-    height: 233px;
+    height: 400px;
     width: 3550px;
     margin-bottom: 80px;
 }
