@@ -29,5 +29,32 @@
       </div>
     </div>
     
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="common/jquery.tools.min.js"></script>
+<script type="text/javascript">
+    
+    var scrollable = $('#scroll-photos').scrollable({
+    size:1,
+    loop:true,
+    api:true,
+    clickable:false,
+    onSeek:function(){
+      $('#scroll-photos li').removeClass('active');
+          $('#scroll-photos li').eq( this.getPageIndex() ).addClass('active');
+    }
+  });
+  $('#scroll-photos img').click(function(){ scrollable.next(); });
+  $('#prev').click(function(){
+    if( scrollable.getIndex() == 0 ){
+      scrollable.end();
+    }else{
+      scrollable.prev();
+    }
+  });
+  $('#next').click(function(){ scrollable.next(); });
+});
+</script>
+    
 </body>
 </html>
