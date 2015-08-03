@@ -4,6 +4,9 @@
   padding-left: 35px;
 }
 
+.box {
+    background-color: 
+
 ul {
   display: block;
   list-style-type: disc;
@@ -14,3 +17,12 @@ ul {
   -webkit-padding-start: 40px;
 }
 
+h1 {
+    text-align: center;
+    color: #1ba99f; 
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 0;
+}
